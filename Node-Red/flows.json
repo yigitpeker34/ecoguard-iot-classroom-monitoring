@@ -1,0 +1,1198 @@
+[
+    {
+        "id": "tab_home_v2",
+        "type": "tab",
+        "label": "🏠 HOME DASHBOARD",
+        "disabled": false,
+        "info": "Live Monitor"
+    },
+    {
+        "id": "tab_eco_v2",
+        "type": "tab",
+        "label": "🛡️ ECOGUARD & TELEGRAM",
+        "disabled": false,
+        "info": "Control Center"
+    },
+    {
+        "id": "bot_config",
+        "type": "telegram bot",
+        "botname": "YP_HTW_ProITD2526_BOT",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "",
+        "socksusername": "",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbothost": "",
+        "localbotport": "",
+        "publicbotport": "",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "2d211d5923fa7f1c",
+        "type": "ui_tab",
+        "name": "🛡️ ECOGUARD COMMAND CENTER",
+        "icon": "fa-cogs",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "17a0b612ad2b903e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.f4.htw-berlin.de",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1120d210e3f85815",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Georgia,Georgia,serif",
+                "edited": false,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "32e6e9b5d614ab68",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "ui_tab_home_v2",
+        "type": "ui_tab",
+        "name": "🏠 HOME DASHBOARD",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ui_tab_eco_v2",
+        "type": "ui_tab",
+        "name": "🛡️ ECOGUARD CENTER",
+        "icon": "fa-shield",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "grp_yigit_live",
+        "type": "ui_group",
+        "z": "tab_home_v2",
+        "name": "👤 YIGIT - LIVE SENSORS",
+        "tab": "ui_tab_home_v2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "grp_class_all",
+        "type": "ui_group",
+        "z": "tab_home_v2",
+        "name": "🌍 CLASSROOM ANALYSIS",
+        "tab": "ui_tab_home_v2",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "grp_sim_ctrl",
+        "type": "ui_group",
+        "z": "tab_eco_v2",
+        "name": "🧪 SIMULATION CONTROLS",
+        "tab": "ui_tab_eco_v2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "grp_sys_stat",
+        "type": "ui_group",
+        "z": "tab_eco_v2",
+        "name": "⚙️ SYSTEM STATUS & ALARMS",
+        "tab": "ui_tab_eco_v2",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "ea7c0b950b34f6c8",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker Node",
+        "broker": "broker.mqttdashboard.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "16a482a25b1457f4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.f4.htw-berlin.de",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0ef43420b1aafde8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.f4.htw-berlin.de",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "61c8126dfb3cfeea",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.f4.htw-berlin.de",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f9e4e8c36bf1b22a",
+        "type": "mqtt-broker",
+        "name": "HTW Server",
+        "broker": "broker.f4.htw-berlin.de",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "serial_conf_v3",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "usb_in_real",
+        "type": "serial in",
+        "z": "tab_home_v2",
+        "name": "USB INPUT (ESP32)",
+        "serial": "32e6e9b5d614ab68",
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "usb_parser_v2"
+            ]
+        ]
+    },
+    {
+        "id": "usb_parser_v2",
+        "type": "function",
+        "z": "tab_home_v2",
+        "name": "DATA PARSER",
+        "func": "// Convert incoming data to string\nvar raw = msg.payload.toString();\n\n// ---------------------------------------------------------\n// 1. TEMPERATURE\n// ---------------------------------------------------------\nif (raw.includes(\"Temperature\")) {\n    // Extract the number: \"Temperature(22.5, ...)\" -> 22.5\n    var t = raw.split(\"Temperature(\")[1].split(\",\")[0];\n    \n    msg.payload = parseFloat(t);\n    msg.topic = \"temp_real\"; // The \"GATE: TEMP\" node expects this topic\n    \n    // Send to Output 1, Nothing to Output 2\n    return [msg, null]; \n}\n\n// ---------------------------------------------------------\n// 2. HUMIDITY\n// ---------------------------------------------------------\nif (raw.includes(\"Humidity\")) {\n    // Extract the number: \"Humidity(45.2, ...)\" -> 45.2\n    var h = raw.split(\"Humidity(\")[1].split(\",\")[0];\n    \n    msg.payload = parseFloat(h);\n    msg.topic = \"humi_real\"; // The \"GATE: HUMI\" node expects this topic\n    \n    // Nothing to Output 1, Send to Output 2\n    return [null, msg];\n}\n\n// If data is unknown, do nothing\nreturn [null, null];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "gate_temp_v2"
+            ],
+            [
+                "gate_humi_v2"
+            ]
+        ]
+    },
+    {
+        "id": "gate_temp_v2",
+        "type": "function",
+        "z": "tab_home_v2",
+        "name": "GATE: TEMP",
+        "func": "var mode = global.get(\"sim_mode\") || false;\nvar simVal = global.get(\"sim_temp\");\n\nif (mode) {\n    if (msg.topic === \"sim_update\") {\n        msg.payload = simVal;\n        return msg;\n    }\n    return null;\n} else {\n    if (msg.topic === \"temp_real\") {\n        return msg;\n    }\n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 160,
+        "wires": [
+            [
+                "gauge_temp_v2",
+                "mqtt_out_temp_v2",
+                "link_to_brain_v2"
+            ]
+        ]
+    },
+    {
+        "id": "gate_humi_v2",
+        "type": "function",
+        "z": "tab_home_v2",
+        "name": "GATE: HUMI",
+        "func": "var mode = global.get(\"sim_mode\") || false;\nvar simVal = global.get(\"sim_humi\");\n\nif (mode) {\n    if (msg.topic === \"sim_update\") {\n        msg.payload = simVal;\n        return msg;\n    }\n    return null;\n} else {\n    if (msg.topic === \"humi_real\") {\n        return msg;\n    }\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 240,
+        "wires": [
+            [
+                "gauge_humi_v2",
+                "mqtt_out_humi_v2"
+            ]
+        ]
+    },
+    {
+        "id": "gauge_temp_v2",
+        "type": "ui_gauge",
+        "z": "tab_home_v2",
+        "name": "",
+        "group": "grp_yigit_live",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature (Yigit)",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 930,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "gauge_humi_v2",
+        "type": "ui_gauge",
+        "z": "tab_home_v2",
+        "name": "",
+        "group": "grp_yigit_live",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Humidity (Yigit)",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#004a9e",
+            "#1f77b4",
+            "#54aef5"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 920,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "mqtt_out_temp_v2",
+        "type": "mqtt out",
+        "z": "tab_home_v2",
+        "name": "Send Temp",
+        "topic": "ProIT_IoT/Yigit/temp",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f9e4e8c36bf1b22a",
+        "x": 930,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "mqtt_out_humi_v2",
+        "type": "mqtt out",
+        "z": "tab_home_v2",
+        "name": "Send Humi",
+        "topic": "ProIT_IoT/Yigit/humi",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f9e4e8c36bf1b22a",
+        "x": 910,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "mqtt_in_all_temp_v2",
+        "type": "mqtt in",
+        "z": "tab_home_v2",
+        "name": "All Class (Temp)",
+        "topic": "ProIT_IoT/+/temp",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "17a0b612ad2b903e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 380,
+        "wires": [
+            [
+                "fix_num_v2"
+            ]
+        ]
+    },
+    {
+        "id": "fix_num_v2",
+        "type": "function",
+        "z": "tab_home_v2",
+        "name": "Fix Number",
+        "func": "msg.payload = parseFloat(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 380,
+        "wires": [
+            [
+                "chart_class_temp_v2"
+            ]
+        ]
+    },
+    {
+        "id": "chart_class_temp_v2",
+        "type": "ui_chart",
+        "z": "tab_home_v2",
+        "name": "",
+        "group": "grp_class_all",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "PRO_ITD26_Class Temp Analysis",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting...",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 680,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "link_to_brain_v2",
+        "type": "link out",
+        "z": "tab_home_v2",
+        "name": "To Eco Brain",
+        "mode": "link",
+        "links": [
+            "link_from_home_v2"
+        ],
+        "x": 775,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "link_from_sim_t_v2",
+        "type": "link in",
+        "z": "tab_home_v2",
+        "name": "Sim T",
+        "links": [
+            "link_to_gates_v2"
+        ],
+        "x": 455,
+        "y": 120,
+        "wires": [
+            [
+                "gate_temp_v2"
+            ]
+        ]
+    },
+    {
+        "id": "link_from_sim_h_v2",
+        "type": "link in",
+        "z": "tab_home_v2",
+        "name": "Sim H",
+        "links": [
+            "link_to_gates_v2"
+        ],
+        "x": 365,
+        "y": 260,
+        "wires": [
+            [
+                "gate_humi_v2"
+            ]
+        ]
+    },
+    {
+        "id": "bcad32dfb1b7c9bf",
+        "type": "mqtt in",
+        "z": "tab_home_v2",
+        "name": "All Class (Temp)",
+        "topic": "ProIT_IoT/+/humi",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "17a0b612ad2b903e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 460,
+        "wires": [
+            [
+                "4882d36c1950929f"
+            ]
+        ]
+    },
+    {
+        "id": "4882d36c1950929f",
+        "type": "function",
+        "z": "tab_home_v2",
+        "name": "Fix Number",
+        "func": "msg.payload = parseFloat(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 460,
+        "wires": [
+            [
+                "b69821fe24384e9f"
+            ]
+        ]
+    },
+    {
+        "id": "b69821fe24384e9f",
+        "type": "ui_chart",
+        "z": "tab_home_v2",
+        "name": "",
+        "group": "grp_class_all",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "PRO_ITD26_Class Humi Analysis",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting...",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 680,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "873ae1d1cdc60914",
+        "type": "serial in",
+        "z": "tab_home_v2",
+        "d": true,
+        "name": "USB INPUT (ESP32)",
+        "serial": "32e6e9b5d614ab68",
+        "x": 170,
+        "y": 40,
+        "wires": [
+            [
+                "15221b97a796e42e"
+            ]
+        ]
+    },
+    {
+        "id": "15221b97a796e42e",
+        "type": "function",
+        "z": "tab_home_v2",
+        "d": true,
+        "name": "function 3",
+        "func": "// 1. Gelen USB mesajını yazıya çevir\nvar gelenVeri = msg.payload.toString();\n\n// 2. Eğer içinde \"Temperature\" yazıyorsa\nif (gelenVeri.includes(\"Temperature\")) {\n    // Yazıyı parçala ve sadece sayıyı al (Örn: 22.5)\n    var sicaklik = gelenVeri.split(\"Temperature(\")[1].split(\",\")[0];\n    \n    // Bunu sayı formatına çevir (Grafiklerin çalışması için şart!)\n    msg.payload = parseFloat(sicaklik);\n    \n    // Okul sunucusu için etiket yapıştır\n    msg.topic = \"ProIT_IoT/Yigit/temp\";\n    \n    return msg;\n}\n\n// 3. Eğer içinde \"Humidity\" yazıyorsa\nif (gelenVeri.includes(\"Humidity\")) {\n    var nem = gelenVeri.split(\"Humidity(\")[1].split(\",\")[0];\n    msg.payload = parseFloat(nem);\n    msg.topic = \"ProIT_IoT/Yigit/humi\";\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 40,
+        "wires": [
+            [
+                "d5da9e58e0d4b8d9"
+            ]
+        ]
+    },
+    {
+        "id": "d5da9e58e0d4b8d9",
+        "type": "mqtt out",
+        "z": "tab_home_v2",
+        "d": true,
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "17a0b612ad2b903e",
+        "x": 530,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "link_from_home_v2",
+        "type": "link in",
+        "z": "tab_eco_v2",
+        "name": "From Home",
+        "links": [
+            "link_to_brain_v2"
+        ],
+        "x": 135,
+        "y": 300,
+        "wires": [
+            [
+                "eco_brain_v2"
+            ]
+        ]
+    },
+    {
+        "id": "sw_sim_v2",
+        "type": "ui_switch",
+        "z": "tab_eco_v2",
+        "name": "SIM MODE",
+        "label": "🧪 TEST MODE",
+        "tooltip": "",
+        "group": "grp_sim_ctrl",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "sim_switch",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "sim_ctrl_v2"
+            ]
+        ]
+    },
+    {
+        "id": "sl_sim_t_v2",
+        "type": "ui_slider",
+        "z": "tab_eco_v2",
+        "name": "VIRTUAL TEMP",
+        "label": "🌡️ SET TEMP",
+        "tooltip": "",
+        "group": "grp_sim_ctrl",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "sim_temp",
+        "topicType": "str",
+        "min": 0,
+        "max": "50",
+        "step": 1,
+        "className": "",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "sim_ctrl_v2"
+            ]
+        ]
+    },
+    {
+        "id": "sl_sim_h_v2",
+        "type": "ui_slider",
+        "z": "tab_eco_v2",
+        "name": "VIRTUAL HUMI",
+        "label": "💧 SET HUMI",
+        "tooltip": "",
+        "group": "grp_sim_ctrl",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "sim_humi",
+        "topicType": "str",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "sim_ctrl_v2"
+            ]
+        ]
+    },
+    {
+        "id": "sim_ctrl_v2",
+        "type": "function",
+        "z": "tab_eco_v2",
+        "name": "SIM CONTROLLER",
+        "func": "if (msg.topic === \"sim_switch\") global.set(\"sim_mode\", msg.payload);\nif (msg.topic === \"sim_temp\") global.set(\"sim_temp\", msg.payload);\nif (msg.topic === \"sim_humi\") global.set(\"sim_humi\", msg.payload);\n\nvar mode = global.get(\"sim_mode\");\nif (mode) {\n    return { payload: \"UPDATE\", topic: \"sim_update\" };\n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 100,
+        "wires": [
+            [
+                "link_to_gates_v2"
+            ]
+        ]
+    },
+    {
+        "id": "link_to_gates_v2",
+        "type": "link out",
+        "z": "tab_eco_v2",
+        "name": "To Gates",
+        "mode": "link",
+        "links": [
+            "link_from_sim_t_v2",
+            "link_from_sim_h_v2"
+        ],
+        "x": 615,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "eco_brain_v2",
+        "type": "function",
+        "z": "tab_eco_v2",
+        "name": "🧠 ECO BRAIN + TELEGRAM",
+        "func": "var temp = msg.payload;\nvar limit = 25;\nvar myChatId = 0; \n\n// Remember previous state (Memory)\nvar lastState = flow.get(\"state\") || \"safe\";\n\nvar win, status, audio, tel;\n\n// --- SCENARIO 1: DANGER STARTED (High Temperature) ---\nif (temp > limit && lastState !== \"danger\") {\n    flow.set(\"state\", \"danger\");\n    \n    win = { payload: \"OPEN\" };\n    status = { payload: \"🚨 ALARM! HIGH TEMPERATURE: \" + temp + \"°C\" };\n    \n    // AUDIO ALERT - REPEAT 3 TIMES! \n    var message = \"Emergency! High Temperature Detected! Opening Windows! \";\n\n    audio = { payload: message + \"... \" + message + \"... \" };\n    \n    // TELEGRAM MESSAGE\n    tel = { payload: { chatId: myChatId, type: 'message', content: \"🚨 ALARM! Temp: \" + temp + \"°C. Window Opening!\" }};\n    \n    return [win, status, audio, tel];\n}\n\n// --- SCENARIO 2: DANGER OVER (Return to Normal) ---\nelse if (temp <= limit && lastState === \"danger\") {\n    flow.set(\"state\", \"safe\");\n    \n    win = { payload: \"CLOSED\" };\n    status = { payload: \"✅ SYSTEM NORMAL. Temperature: \" + temp + \"°C\" };\n    \n    // AUDIO FEEDBACK (Talking when closing)\n    audio = { payload: \"Temperature is normal. Closing Windows.\" };\n    \n    // TELEGRAM MESSAGE\n    tel = { payload: { chatId: myChatId, type: 'message', content: \"✅ Normal. Temp: \" + temp + \"°C. Window Closed.\" }};\n    \n    return [win, status, audio, tel];\n}\n\n// --- SCENARIO 3: STATE UNCHANGED (Silent Update) ---\nelse {\n    // Only update the text on screen, do not speak\n    status = { payload: (lastState===\"danger\"?\"🚨 ALARM: \":\"✅ NORMAL: \") + temp + \"°C\" };\n    return [null, status, null, null];\n}",
+        "outputs": 4,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 320,
+        "wires": [
+            [
+                "win_anim_v2"
+            ],
+            [
+                "status_text_v2"
+            ],
+            [
+                "audio_out_v2"
+            ],
+            [
+                "tel_sender_v2"
+            ]
+        ]
+    },
+    {
+        "id": "win_anim_v2",
+        "type": "ui_template",
+        "z": "tab_eco_v2",
+        "group": "grp_sys_stat",
+        "name": "WINDOW ANIM",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<div id=\"win-dev\"\n    style=\"text-align:center;padding:20px;border:3px solid #334155;border-radius:15px;background:#1e293b;transition:all 0.5s ease;\">\n    <h3 style=\"color:#94a3b8;\">AUTOMATIC WINDOW</h3>\n    <i id=\"fan-icon\" class=\"fa fa-snowflake-o fa-4x\" style=\"color:#334155;transition:all 0.5s;\"></i>\n    <h3 id=\"win-status\" style=\"color:#64748b;margin-top:15px;\">CLOSED</h3>\n</div>\n<script>\n    (function(scope){scope.$watch('msg',function(msg){if(msg&&msg.payload){var dev=document.getElementById('win-dev');var fan=document.getElementById('fan-icon');var txt=document.getElementById('win-status');if(msg.payload===\"OPEN\"){dev.style.border=\"3px solid #38bdf8\";fan.style.color=\"#38bdf8\";fan.classList.add(\"fa-spin\");txt.innerHTML=\"⚠️ OPEN (COOLING)\";txt.style.color=\"#38bdf8\";}else{dev.style.border=\"3px solid #334155\";fan.style.color=\"#334155\";fan.classList.remove(\"fa-spin\");txt.innerHTML=\"KAPALI\";txt.style.color=\"#64748b\";}}});})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 680,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "status_text_v2",
+        "type": "ui_text",
+        "z": "tab_eco_v2",
+        "group": "grp_sys_stat",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "STATUS:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 680,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "audio_out_v2",
+        "type": "ui_template",
+        "z": "tab_eco_v2",
+        "group": "grp_sys_stat",
+        "name": "AUDIO",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<script>(function(s){s.$watch('msg',function(m){if(m&&m.payload){var u=new SpeechSynthesisUtterance(m.payload);u.lang='en-US';window.speechSynthesis.speak(u);}});})(scope);</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 690,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "tel_sender_v2",
+        "type": "telegram sender",
+        "z": "tab_eco_v2",
+        "name": "Telegram Send",
+        "bot": "bot_config",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 680,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "tel_receiver_v2",
+        "type": "telegram receiver",
+        "z": "tab_eco_v2",
+        "name": "Telegram IN",
+        "bot": "bot_config",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "hasinput": false,
+        "inputs": 0,
+        "handleallupdates": false,
+        "x": 130,
+        "y": 440,
+        "wires": [
+            [
+                "tel_reply_logic"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "tel_reply_logic",
+        "type": "function",
+        "z": "tab_eco_v2",
+        "name": "Reply Logic",
+        "func": "var chatId = msg.payload.chatId;\nvar text = msg.payload.content;\nvar reply = \"Command not found. Try /status\";\n\nif (text == \"/status\") {\n    // Get current temp from global if stored, or just dummy reply\n    // Ideally we store temp in flow context\n    reply = \"✅ System is Online. Monitoring Active.\";\n}\n\nmsg.payload = {\n    chatId: chatId,\n    type: 'message',\n    content: reply\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 440,
+        "wires": [
+            [
+                "tel_sender_v2"
+            ]
+        ]
+    },
+    {
+        "id": "0da31d6eb11ea4d1",
+        "type": "ui_template",
+        "z": "tab_eco_v2",
+        "group": "8cf210aa8b0b443f",
+        "name": "BASE CSS",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    body { background-color: #0f172a; color: white; transition: background-color 0.5s; }\n    .md-card { background-color: rgba(0,0,0,0.5) !important; border: 1px solid #4ade80; box-shadow: 0 0 10px #4ade80; }\n    .md-toolbar-tools { background: linear-gradient(90deg, #166534 0%, #15803d 100%) !important; }\n</style>\n<div style=\"width: 100%; overflow: hidden; white-space: nowrap; margin-bottom: 10px;\">\n  <marquee behavior=\"scroll\" direction=\"left\" scrollamount=\"8\">\n    <b style=\"font-size:18px; color:#4ade80;\">🚀 YIGIT'S AI SYSTEM: VOICE + VISUAL ALERTS ACTIVE... 🚀</b>\n  </marquee>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 830,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28caa69bd452f555",
+        "type": "ui_template",
+        "z": "tab_eco_v2",
+        "group": "grp_sys_stat",
+        "name": "V5 CSS DESIGN",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    body { background-color: #0f172a !important; color: white; }\n    .md-card { background-color: rgba(30, 41, 59, 0.9) !important; border-radius: 12px; border: 1px solid #334155; }\n    .md-toolbar-tools { background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%) !important; }\n    .nr-dashboard-text { font-size: 16px; }\n</style>\n<div style=\"width: 100%; margin-bottom: 10px;\">\n  <marquee style=\"color:#38bdf8; font-weight:bold;\">\n    🚀 SYSTEM ONLINE: Simulation Mode Available - Auto Window Actuator Ready\n  </marquee>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 170,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5db143a04e0d7ccf",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-telegrambot": "17.0.3",
+            "node-red-dashboard": "3.6.6",
+            "node-red-node-serialport": "2.0.3"
+        }
+    }
+]
